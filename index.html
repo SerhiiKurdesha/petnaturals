@@ -13,18 +13,22 @@
     <header class="page-header">
         <div class="container">
             <div class="page-header__logo-content">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="50" height="50">
+                        <use href="./images/svg/sprite.svg#menu"></use>
+                    </svg>
+                </button>
                 <div class="page-header__cloud-logo">
-                    <img src="./images/page-header__cloud-logo.png" alt="logo">
+                    <img class="page-header__cloud-img" src="./images/page-header__cloud-logo.png" alt="logo">
                     <div class="page-header__logo">
-                        <img src="./images/page-header__logo.png" alt="logo">
+                        <img class="page-header__logo-img" src="./images/page-header__logo.png" alt="logo">
                     </div>
-                </div>
-                <div></div>
-                <div class="pade-header__nav-content">
+                </div>    
+                <div class="page-header__nav-content">
                     <div class="page-header__nav-cloud">
                         <img src="./images/page-header__cloud-nav.png" alt="cloud">
                     </div>
-                    <div class="page-header__nav-content">
+                    <div class="page-header__nav">
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
@@ -44,6 +48,49 @@
             
         </div>
     </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                
+                    <h1 class="hero__title">Pet Naturals of Vermont, Calming, For Cats</h1>
+                
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="container">
+            <button class="menu-toggle js-close-menu">
+                <svg width="50" height="50">
+                    <use href="./images/svg/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">order</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">about</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">results</a>
+                </li>
+            </ul>
+        </div>  
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     
 </body>
 </html>
