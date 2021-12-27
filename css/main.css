@@ -656,8 +656,13 @@ button {
 }
 
 .hero__modal {
+  margin: 0 auto;
   width: 270px;
-  height: 472px;
+  background: #fdfcfc;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .hero__modal-head {
@@ -674,7 +679,6 @@ button {
   background: #7eb2e1;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
   padding: 23px 24px 33px 24px;
   border: 1px solid transparent;
 }
@@ -729,9 +733,8 @@ button {
   border-bottom: 2px solid #f6be91;
 }
 
-.hero__modal-body {
-  margin-top: 21px;
-  padding: 0 24px;
+.hero__modal-center {
+  padding: 21px 24px 20px 24px;
 }
 
 .hero__span {
@@ -780,7 +783,6 @@ button {
 .hero__modal-btn {
   margin-top: 15px;
   text-align: center;
-  padding: 0 24px;
 }
 
 .hero__btn {
