@@ -376,10 +376,6 @@ button {
   background: transparent;
 }
 
-img {
-  max-width: 100%;
-}
-
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -502,17 +498,19 @@ img {
 }
 
 .hero {
+  max-width: 1920px;
+  max-height: 844px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3))), url(../images/hero.webp);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3)), url(../images/hero.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
   padding-bottom: 100px;
-  position: relative;
 }
 
 .hero__title {
-  padding-top: 65px;
+  padding-top: 85px;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -537,6 +535,10 @@ img {
   }
 }
 
+.hero__content {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .hero__content {
     display: -webkit-box;
@@ -548,6 +550,12 @@ img {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .hero__content {
+    margin-top: 8px;
   }
 }
 
@@ -640,8 +648,10 @@ img {
   }
 }
 
-.hero__window {
-  margin-left: -174px;
+@media screen and (min-width: 1170px) {
+  .hero__window {
+    margin-left: -174px;
+  }
 }
 
 .hero__modal {
@@ -800,6 +810,55 @@ img {
   text-align: center;
   color: #444444;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.features {
+  margin: 52px auto 38px;
+  max-width: 1783px;
+  background-image: url(../images/features__img.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140.90909%;
+  text-align: center;
+  color: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F9E994), color-stop(56.25%, #537D13), to(#483C08));
+  background: linear-gradient(to bottom, #F9E994 0%, #537D13 56.25%, #483C08 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .features__title {
+    font-size: 32px;
+    line-height: 128.125%;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .features__title {
+    font-size: 52px;
+    line-height: 117.30769%;
+  }
+}
+
+.features__content-art {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: #f6e791;
+  -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+  max-width: 305px;
+}
+
+.features__img {
+  text-align: center;
 }
 
 .menu-container {
