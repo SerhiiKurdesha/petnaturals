@@ -376,6 +376,10 @@ button {
   background: transparent;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -541,9 +545,9 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
   }
 }
 
@@ -620,7 +624,8 @@ button {
 .hero__img {
   display: none;
   z-index: 1;
-  margin-left: -80px;
+  margin-left: -250px;
+  margin-bottom: -9px;
 }
 
 @media screen and (min-width: 1170px) {
@@ -635,24 +640,8 @@ button {
   }
 }
 
-.hero__img-cat1 {
-  z-index: 2;
-  margin-left: -80px;
-  margin-bottom: -50px;
-  max-width: 100%;
-}
-
-.hero__img-cat2 {
-  z-index: 1;
-  margin-left: -150px;
-  max-width: 100%;
-}
-
-.hero__img-cat3 {
-  z-index: 2;
-  margin-left: -150px;
-  margin-bottom: -50px;
-  max-width: 100%;
+.hero__window {
+  margin-left: -174px;
 }
 
 .hero__modal {

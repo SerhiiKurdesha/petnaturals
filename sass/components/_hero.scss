@@ -31,7 +31,7 @@
     @media screen and (min-width: 768px){
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: end;
     }
 }
 .hero__info{
@@ -94,7 +94,8 @@
 .hero__img{
     display: none;
     z-index: 1;
-    margin-left: -80px;
+    margin-left: -250px;
+    margin-bottom: -9px;
 
     @media screen and (min-width: 1170px){
         display: block;
@@ -102,24 +103,10 @@
         align-items: center;
     }
 }
-.hero__img-cat1{
-    z-index: 2;
-    margin-left: -80px;
-    margin-bottom: -50px;
-    max-width: 100%;
-}
-.hero__img-cat2{
-    z-index: 1;
-    margin-left: -150px;
-    max-width: 100%;
-}
-.hero__img-cat3{
-    z-index: 2;
-    margin-left: -150px;
-    margin-bottom: -50px;
-    max-width: 100%;
-}
 // ========================
+.hero__window{
+    margin-left: -174px;
+}
 .hero__modal{
     margin: 0 auto;  
     width: 270px;
