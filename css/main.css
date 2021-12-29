@@ -812,10 +812,21 @@ button {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.features {
+  padding: 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 80px 0;
+  }
+}
+
 @media screen and (min-width: 1170px) {
   .features {
-    max-width: 1783px;
-    max-height: 671px;
+    padding: 100px 0;
+    max-width: 100vw;
+    max-height: 671vh;
     background-image: url(../images/features__img.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -824,7 +835,6 @@ button {
 }
 
 .features__title {
-  padding-top: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -839,7 +849,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .features__title {
-    padding-top: 80px;
     font-size: 32px;
     line-height: 128.125%;
   }
@@ -847,14 +856,25 @@ button {
 
 @media screen and (min-width: 1170px) {
   .features__title {
-    padding-top: 100px;
     font-size: 52px;
     line-height: 117.30769%;
   }
 }
 
-.features__content-img img {
-  max-width: 100%;
+.features__content {
+  margin-top: 41px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__content {
+    margin-top: 51px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .features__content {
+    margin-top: 61px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -876,7 +896,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .features__list {
-    padding: 0 28px;
+    padding: 0 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -890,6 +910,16 @@ button {
             align-items: center;
     gap: 2em;
   }
+}
+
+@media screen and (min-width: 1170px) {
+  .features__list {
+    padding: 0 28px;
+  }
+}
+
+.features__content-img img {
+  max-width: 100%;
 }
 
 .features__item {
@@ -910,6 +940,16 @@ button {
 @media screen and (min-width: 768px) {
   .features__item {
     max-width: 305px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -917,6 +957,12 @@ button {
   padding: 15px;
   background: rgba(161, 211, 55, 0.4);
   border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__content-text {
+    height: 218px;
+  }
 }
 
 .features__subtitle {
