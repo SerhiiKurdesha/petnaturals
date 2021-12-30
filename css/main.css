@@ -717,17 +717,17 @@ button {
   position: relative;
 }
 
-.price-old::before {
+.price-old::after {
   content: '';
   display: block;
   width: 100%;
   height: 2px;
   position: absolute;
-  background: #F6BE91;
+  background: #f6be91;
   -webkit-transform: rotate(162.55deg);
           transform: rotate(162.55deg);
   left: 0;
-  bottom: 50%;
+  top: 50%;
 }
 
 .price-new {
